@@ -1,0 +1,266 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Navbar-sec begins */
+.container {
+  min-height: 100vh;
+  background: url(/images/desktop/image-hero.jpg) no-repeat center center/cover;
+}
+
+.head-content {
+  margin: 0 90px;
+  height: 100vh;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.nav-ul {
+  width: 40vw;
+  justify-content: space-between;
+}
+.nav-ul a:hover {
+  border-bottom: 2px solid white;
+}
+
+.hero-dis {
+  position: absolute;
+  top: 35%;
+  left: 90px;
+}
+
+.hero-dis > h2 {
+  padding: 25px 50px 25px 25px;
+  border: 2px solid var(--white);
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "josefin sans";
+  color: var(--white);
+  width: 40vw;
+}
+
+/* Navbar-sec-completed */
+
+/* ABOUT SECTION BEGIN */
+
+.about-container {
+  margin: 0 90px;
+  height: 100vh;
+}
+.about-content {
+  margin-top: 20vh;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+/* .about-content > div {
+  height: 60vh;
+  width: 50%;
+} */
+.left-img {
+  background: url(/images/desktop/image-interactive.jpg) no-repeat center
+    center/cover;
+  height: 70vh;
+  width: 60%;
+}
+.right {
+  width: 50%;
+
+  height: 40vh;
+  background-color: var(--white);
+  /* background-color: bisque; */
+
+  color: var(--black);
+  margin-left: -10rem;
+  text-align: left;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.right > h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 40px 80px;
+  letter-spacing: 2px;
+}
+.right > p {
+  /* padding: 0 80px; */
+  padding-left: 80px;
+  color: var(--dark-gray);
+  font-family: "alata";
+  font-weight: 400;
+  text-align: justify;
+}
+/* COLLECTIONS STYLEING BEGINS */
+.collection {
+  margin: 0 90px;
+  /* height: 100vh; */
+}
+
+.collection-top {
+  justify-content: space-between;
+  height: 10vh;
+  margin-bottom: 2.5rem;
+}
+.collection-top > h2 {
+  font-family: "josefin sans";
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: var(--white);
+  border: 2px solid var(--very-dark-gray);
+  color: var(--black);
+  font-family: "alata";
+}
+.btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.item-1 {
+  background: url(/images/desktop/image-deep-earth.jpg) no-repeat center
+    center/cover;
+}
+
+.item-2 {
+  background: url(/images/desktop/image-night-arcade.jpg) no-repeat center
+    center/cover;
+}
+
+.item-3 {
+  background: url(/images/desktop/image-soccer-team.jpg) no-repeat center
+    center/cover;
+}
+
+.item-4 {
+  background: url(/images/desktop/image-grid.jpg) no-repeat center center/cover;
+}
+
+.item-5 {
+  background: url(/images/desktop/image-from-above.jpg) no-repeat center
+    center/cover;
+}
+
+.item-6 {
+  background: url(/images/desktop/image-pocket-borealis.jpg) no-repeat center
+    center/cover;
+}
+
+.item-7 {
+  background: url(/images/desktop/image-curiosity.jpg) no-repeat center
+    center/cover;
+}
+.item-8 {
+  background: url(/images/desktop/image-fisheye.jpg) no-repeat center
+    center/cover;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.box {
+  height: 70vh;
+  width: auto;
+  position: relative;
+}
+
+.box:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.box > h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transition: all 500ms ease-in-out;
+}
+.box:hover > h1 {
+  color: black;
+}
+.item-1:hover > h1 {
+  color: var(--white);
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+.box:hover::after {
+  background-color: rgba(168, 157, 157, 0.171);
+}
+/* collection-sec end here */
+/* FOOTER-SECTION begin from here */
+
+.footer {
+  margin: 0px 90px;
+  height: 20vh;
+}
+.footer-sec {
+  background-color: var(--black);
+  color: var(--white);
+  height: 20vh;
+  margin-top: 10rem;
+}
+
+.footer-top {
+  justify-content: space-between;
+}
+
+.footer-nav {
+  justify-content: space-between;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.p > p {
+  color: var(--dark-gray);
+}
+
+.icons > i {
+  padding: 0 5px;
+}
+.icons > i:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+.foot-ul {
+  width: 30%;
+  justify-content: space-between;
+}
+.foot-ul a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* FOOTER-SEC END HERE */
